@@ -14,7 +14,7 @@
   <p class="w3-text">Seats: {{data.no_of_seats}}</p>
 </div>
 
-<button class="w3-button w3-block w3-dark-grey">Book Now</button>
+<button class="w3-button w3-hover-teal w3-block w3-dark-grey">Book Now</button>
 
 </div>
   </div>
