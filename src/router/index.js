@@ -5,11 +5,16 @@ import Home from '@/components/home'
 import Search from '@/components/search'
 import Buses from '@/components/buses'
 import Hotels from '@/components/hotels'
+import About from '@/components/about'
+import Dashboard from '@/components/dashboard'
+import Payment from '@/components/payment'
+import Admin from '@/components/admin'
+
 
 Vue.use(Router)
 
 export default new Router({
-  
+  mode:'history',
   routes: [
     {
       path: '/',
@@ -17,9 +22,24 @@ export default new Router({
       component: Home
     },
     {
+      path:'/about',
+      name:'about',
+      component:About
+    },
+    {
+      path:'/admin',
+      name:'admin',
+      component:Admin
+    },
+    {
       path:'/hotels',
       name:'hotels',
       component:Hotels
+    },
+      {
+      path:'/buses',
+      name:'buses',
+      component:Buses
     },
     {
       path:'/search',
@@ -27,9 +47,15 @@ export default new Router({
       component:Search
     },
     {
-      path:'/buses',
-      name:'buses',
-      component:Buses
+      path:'/payment',
+      name:'payment',
+      component:Payment
+    },
+    {
+      path:'/dashboard',
+      name:'dashboard',
+      component:Dashboard
     }
+  
   ]
 })

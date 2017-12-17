@@ -1,6 +1,6 @@
 <template>
-  <div class=" w3-teal w3-bottom">
-    FindMyBus.Copyright.2017
+  <div class=" w3-black w3-bottom">
+    FindMyBus.2017
   </div>
 </template>
 
